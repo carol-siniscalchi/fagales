@@ -1,0 +1,96 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=85;
+	Taxlabels
+		Alfaroa_manningii
+		Alfaropsis_roxburghiana
+		Allocasuarina_verticillata
+		Alnus_incana
+		Alnusclarnoensis
+		Antiquacupula_sulcata
+		Antiquocarya_verruculosa
+		Archaefagacea_futabensis
+		Asterocarpinus_perplexans
+		Beardia_vancouverensis
+		Betula_leopoldae
+		Betula_pendula
+		Budvaricarpus_serialis
+		Calathiocarpus_minimus
+		Canacomyrica_monticola
+		Carpinus_betulus
+		Carya_ovata
+		Caryanthus_knoblochii
+		Cascadiacarpa_spinosa
+		Casholdia_microptera
+		Castanea_seguinii
+		Castanopsis_tibetana
+		Castanopsoidea_columbiana
+		Casuarina_equisetifolia
+		Ceuthostoma_terminale
+		Chrysolepis_sempervirens
+		Colombobalanus_excelsa
+		Comptonia_peregrina
+		Contracuparius_huntsvillensis
+		Corylus_avellana
+		Cranea_wyomingensis
+		Cruciptera_simpsonii
+		Cyclocarya_paliurus
+		Dahlgrenianthus_suecicus
+		Endressianthus_miraensis
+		Engelhardia_spicata
+		Fagopsis_longifolia
+		Fagus_sylvatica
+		Ferrignocarpus_bivalvis
+		Formanodendron_doichangensis
+		Gymnostoma_nobile
+		Hooleya_lata
+		Juglans_mandshurica
+		Lithocarpus_henryi
+		Manningia_crassa
+		Morella_cerifera
+		Myrica_gale
+		Normanthus_miraensis
+		Nothofagus_aequilateralis
+		Nothofagus_alessandrii
+		Nothofagus_alpina
+		Nothofagus_antarctica
+		Nothofagus_balansae
+		Nothofagus_baumanniae
+		Nothofagus_betuloides
+		Nothofagus_codonandra
+		Nothofagus_crenata
+		Nothofagus_cunninghamii
+		Nothofagus_dombeyi
+		Nothofagus_fusca
+		Nothofagus_glauca
+		Nothofagus_nitida
+		Nothofagus_obliqua
+		Nothofagus_perryi
+		Nothofagus_pumilio
+		Notholithocarpus_densiflorus
+		Oreomunnea_mexicana
+		Ostrya_carpinifolia
+		Ostryopsis_davidiana
+		Palaeocarpinus_dakotensis
+		Palaeocarya_clarnensis
+		Paleooreomunnea_stoneana
+		Paleoplatycarya_wingii
+		Paraengelhardtia_eocenica
+		Platycarya_strobilacea
+		Polyptera_manningii
+		Protofagacea_allonensis
+		Pseudofagus_idahoensis
+		Pterocarya_stenoptera
+		Quercus_rubra
+		Rhoiptelea_chiliantha
+		Soepadmoa_cupulata
+		Ticodendron_incognitum
+		Trigonobalanoidea_americana
+		Trigonobalanus_verticillata
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R]((((((((((((((((Castanea_seguinii[&index=71]:12.182450,Castanopsis_tibetana[&index=59]:12.182450)[&index=87,posterior=0.999067,age_95%_HPD={5.968,19.1126}]:7.124356,Chrysolepis_sempervirens[&index=39]:19.306806)[&index=88,posterior=0.992534,age_95%_HPD={11.9362,27.9538}]:7.298706,(Lithocarpus_henryi[&index=21]:14.519951,Notholithocarpus_densiflorus[&index=41]:14.519951)[&index=89,posterior=1.000000,age_95%_HPD={6.51125,22.5148}]:12.085561)[&index=90,posterior=0.984002,age_95%_HPD={17.6633,37.7123}]:8.724191,Quercus_rubra[&index=58]:35.329703)[&index=91,posterior=0.793094,age_95%_HPD={24.3538,46.9369}]:7.052595,Trigonobalanus_verticillata[&index=23]:42.382298)[&index=92,posterior=0.448340,age_95%_HPD={31.5958,53.4619}]:10.400050,Contracuparius_huntsvillensis[&index=30,sampled_ancestor=0.000933,age_95%_HPD={28.126,33.8829}]:21.691513)[&index=93,posterior=0.305426,age_95%_HPD={39.0939,68.2564}]:12.847787,((Colombobalanus_excelsa[&index=49]:11.971331,Formanodendron_doichangensis[&index=48]:11.971331)[&index=94,posterior=0.980003,age_95%_HPD={2.09006,24.4}]:45.353140,Trigonobalanoidea_americana[&index=16,sampled_ancestor=0.072524,age_95%_HPD={47.8941,55.3686}]:5.789923)[&index=95,posterior=0.431143,age_95%_HPD={49.88,64.7887}]:8.305665)[&index=96,posterior=0.448873,age_95%_HPD={53.8792,76.0051}]:5.386323,Castanopsoidea_columbiana[&index=13,sampled_ancestor=0.118518,age_95%_HPD={48.2407,55.7864}]:19.163688)[&index=97,posterior=0.305826,age_95%_HPD={59.7656,84.5094}]:6.202454,Fagopsis_longifolia[&index=72,sampled_ancestor=0.000667,age_95%_HPD={34.7226,48.8389}]:35.297023)[&index=98,posterior=0.330623,age_95%_HPD={66.103,89.0629}]:9.486247,(Fagus_sylvatica[&index=66]:36.051333,Pseudofagus_idahoensis[&index=34,sampled_ancestor=0.002000,age_95%_HPD={15.0039,15.9017}]:20.565761)[&index=99,posterior=0.987068,age_95%_HPD={18.1161,56.9964}]:50.653827)[&index=100,posterior=0.132516,age_95%_HPD={72.2364,99.7431}]:18.867631,(((((((Nothofagus_balansae[&index=78]:6.279358,Nothofagus_crenata[&index=38]:6.279358)[&index=101,posterior=0.044261,age_95%_HPD={0.01288,18.9059}]:5.753041,Nothofagus_codonandra[&index=5]:12.032399)[&index=102,posterior=0.006133,age_95%_HPD={1.03818,26.8853}]:1.378228,(Nothofagus_aequilateralis[&index=6]:6.207661,Nothofagus_nitida[&index=27]:6.207661)[&index=103,posterior=0.046660,age_95%_HPD={0.037868,17.0684}]:7.202966)[&index=104,posterior=0.000267,age_95%_HPD={20.478,20.478}]:7.453494,((Nothofagus_cunninghamii[&index=51]:5.626056,Nothofagus_fusca[&index=29]:5.626056)[&index=105,posterior=0.052526,age_95%_HPD={0.026096,17.1441}]:8.663049,(Nothofagus_dombeyi[&index=31]:6.719781,Nothofagus_glauca[&index=33]:6.719781)[&index=106,posterior=0.040661,age_95%_HPD={0.057098,19.0345}]:7.569324)[&index=107,posterior=0.002400,age_95%_HPD={2.89279,29.1194}]:6.575016)[&index=108,posterior=0.000133,age_95%_HPD={20.8641,20.8641}]:-1.444583,((Nothofagus_alessandrii[&index=8]:6.256732,Nothofagus_betuloides[&index=32]:6.256732)[&index=109,posterior=0.034795,age_95%_HPD={0.031979,16.6192}]:6.605272,Nothofagus_alpina[&index=25]:12.862004)[&index=110,posterior=0.003733,age_95%_HPD={2.18316,21.7858}]:6.557534)[&index=111,posterior=0.000533,age_95%_HPD={13.1622,25.2039}]:5.331707,(Nothofagus_antarctica[&index=55]:6.597413,Nothofagus_pumilio[&index=24]:6.597413)[&index=112,posterior=0.035329,age_95%_HPD={0.016609,20.5218}]:18.153832)[&index=113,posterior=0.000533,age_95%_HPD={23.3984,27.0622}]:21.312375,((Nothofagus_baumanniae[&index=7]:6.293031,Nothofagus_obliqua[&index=28]:6.293031)[&index=114,posterior=0.042928,age_95%_HPD={0.008561,18.2464}]:2.733229,Nothofagus_perryi[&index=54]:9.026259)[&index=115,posterior=0.006532,age_95%_HPD={1.61896,20.8145}]:37.037361)[&index=116,posterior=0.962805,age_95%_HPD={20.5056,73.0284}]:59.509171)[&index=117,posterior=0.040261,age_95%_HPD={97.1927,116.432}]:7.501211,((Protofagacea_allonensis[&index=2,sampled_ancestor=0.001200,age_95%_HPD={83.6544,86.1448}]:10.731731,Soepadmoa_cupulata[&index=86,sampled_ancestor=0.276496,age_95%_HPD={90.0987,93.7458}]:3.657511)[&index=118,posterior=0.219437,age_95%_HPD={90.7556,101.657}]:6.393801,Antiquacupula_sulcata[&index=4,sampled_ancestor=0.001200,age_95%_HPD={83.6199,86.1646}]:16.997908)[&index=119,posterior=0.434342,age_95%_HPD={94.5069,110.652}]:11.045122)[&index=120,posterior=0.070657,age_95%_HPD={105.206,123.398}]:3.424496,Archaefagacea_futabensis[&index=85,sampled_ancestor=0.000667,age_95%_HPD={86.492,89.2972}]:28.618871)[&index=121,posterior=0.051726,age_95%_HPD={108.812,125.187}]:2.060554)[&index=122,posterior=0.201040,age_95%_HPD={110.686,125.921}]:7.589359,(((((((((((Alfaroa_manningii[&index=36]:12.759924,Oreomunnea_mexicana[&index=52]:12.759924)[&index=123,posterior=1.000000,age_95%_HPD={5.53801,20.0777}]:8.691021,Alfaropsis_roxburghiana[&index=63]:21.450944)[&index=124,posterior=0.921077,age_95%_HPD={11.8221,31.0041}]:6.104011,Engelhardia_spicata[&index=35]:27.554955)[&index=125,posterior=1.000000,age_95%_HPD={17.6531,39.4189}]:23.043050,(Palaeocarya_clarnensis[&index=19,sampled_ancestor=0.174243,age_95%_HPD={38.3979,47.7593}]:5.984392,Paleooreomunnea_stoneana[&index=70,sampled_ancestor=0.114918,age_95%_HPD={37.4874,48.1508}]:6.375767)[&index=126,posterior=0.220771,age_95%_HPD={41.1596,55.7242}]:1.612869)[&index=127,posterior=0.288095,age_95%_HPD={42.7627,57.8419}]:1.406830)Paraengelhardtia_eocenica[&index=128,posterior=0.083589,age_95%_HPD={48.4877,55.9738},sampled_ancestor=0.577256]:15.094276,Casholdia_microptera[&index=10,sampled_ancestor=0.001333,age_95%_HPD={55.8162,58.5294}]:9.803766)[&index=129,posterior=0.918811,age_95%_HPD={59.1067,77.0542}]:14.023495,((((((Cyclocarya_paliurus[&index=77]:15.172108,Pterocarya_stenoptera[&index=26]:15.172108)[&index=130,posterior=1.000000,age_95%_HPD={7.7424,23.0433}]:6.326566,Juglans_mandshurica[&index=61]:21.498674)[&index=131,posterior=1.000000,age_95%_HPD={13.1825,30.5808}]:12.270468,Carya_ovata[&index=22]:33.769143)[&index=132,posterior=0.997734,age_95%_HPD={20.2618,47.3476}]:27.688227,Beardia_vancouverensis[&index=76,sampled_ancestor=0.004399,age_95%_HPD={48.25,55.7024}]:9.355527)[&index=133,posterior=0.505533,age_95%_HPD={53.4631,69.3141}]:8.248246,(Cruciptera_simpsonii[&index=60,sampled_ancestor=0.049460,age_95%_HPD={38.8261,43.8475}]:24.792481,Polyptera_manningii[&index=9,sampled_ancestor=0.027863,age_95%_HPD={57.383,63.994}]:5.738418)[&index=134,posterior=0.277696,age_95%_HPD={59.2877,72.1211}]:3.518082)[&index=135,posterior=0.648847,age_95%_HPD={63.312,76.8027}]:7.227489,((Hooleya_lata[&index=62,sampled_ancestor=0.069057,age_95%_HPD={43.517,44.0984}]:14.415931,Paleoplatycarya_wingii[&index=75,sampled_ancestor=0.077990,age_95%_HPD={52.5136,52.6902}]:5.637540)[&index=136,posterior=0.298360,age_95%_HPD={52.5424,67.9316}]:4.000582,Platycarya_strobilacea[&index=14]:62.234510)[&index=137,posterior=0.450073,age_95%_HPD={53.6284,71.1871}]:14.698596)[&index=138,posterior=0.239835,age_95%_HPD={69.4233,83.2956}]:4.189501)[&index=139,posterior=0.553526,age_95%_HPD={74.2765,88.715}]:16.359061,Rhoiptelea_chiliantha[&index=45]:97.481667)[&index=140,posterior=0.538595,age_95%_HPD={87.844,107.704}]:2.764832,Cascadiacarpa_spinosa[&index=17,sampled_ancestor=0.005066,age_95%_HPD={48.2155,55.963}]:48.241005)[&index=141,posterior=0.148514,age_95%_HPD={89.6613,111.732}]:10.738801,((((Morella_cerifera[&index=40]:13.961900,Myrica_gale[&index=57]:13.961900)[&index=142,posterior=0.992001,age_95%_HPD={7.3174,21.8314}]:6.857117,Comptonia_peregrina[&index=65]:20.819017)[&index=143,posterior=1.000000,age_95%_HPD={12.2436,30.0132}]:17.240655,Canacomyrica_monticola[&index=44]:38.059672)[&index=144,posterior=0.999067,age_95%_HPD={27.3819,49.9154}]:26.682390,Alnusclarnoensis[&index=73,sampled_ancestor=0.083456,age_95%_HPD={44.1531,47.818}]:18.684353)[&index=145,posterior=0.045327,age_95%_HPD={44.9913,94.7841}]:46.243238)[&index=146,posterior=0.209572,age_95%_HPD={101.387,121.87}]:8.411837,((((((((Carpinus_betulus[&index=69]:9.364657,Ostrya_carpinifolia[&index=53]:9.364657)[&index=147,posterior=1.000000,age_95%_HPD={3.27223,16.4654}]:15.655534,Ostryopsis_davidiana[&index=42]:25.020191)[&index=148,posterior=1.000000,age_95%_HPD={11.4191,42.0806}]:7.148306,Corylus_avellana[&index=18]:32.168496)[&index=149,posterior=0.661645,age_95%_HPD={20.3018,45.9851}]:29.255376,Cranea_wyomingensis[&index=12,sampled_ancestor=0.193974,age_95%_HPD={55.8762,57.9736}]:4.472601)[&index=150,posterior=0.195041,age_95%_HPD={56.5963,67.1307}]:7.628725,(Asterocarpinus_perplexans[&index=56,sampled_ancestor=0.003066,age_95%_HPD={32.1508,34.9161}]:26.433062,Palaeocarpinus_dakotensis[&index=11,sampled_ancestor=0.491135,age_95%_HPD={55.8166,58.5023}]:2.872923)[&index=151,posterior=0.265031,age_95%_HPD={55.9272,64.5637}]:9.081995)[&index=152,posterior=0.888015,age_95%_HPD={60.644,78.3156}]:13.454119,((Alnus_incana[&index=20]:24.451681,Betula_pendula[&index=64]:24.451681)[&index=153,posterior=0.999867,age_95%_HPD={13.2504,37.8237}]:29.253365,Betula_leopoldae[&index=67,sampled_ancestor=0.020531,age_95%_HPD={47.1009,48.5936}]:5.903193)[&index=154,posterior=0.969737,age_95%_HPD={47.8472,61.0243}]:28.801669)[&index=155,posterior=0.892414,age_95%_HPD={72.6173,94.1039}]:10.412307,(Ferrignocarpus_bivalvis[&index=68,sampled_ancestor=0.234769,age_95%_HPD={45.0106,49.7014}]:6.656901,Ticodendron_incognitum[&index=47]:54.070148)[&index=156,posterior=0.736169,age_95%_HPD={45.473,66.3612}]:38.848875)[&index=157,posterior=0.805893,age_95%_HPD={80.1246,104.263}]:8.506432,((Allocasuarina_verticillata[&index=50]:11.120649,Casuarina_equisetifolia[&index=46]:11.120649)[&index=158,posterior=0.995067,age_95%_HPD={5.01216,16.9062}]:7.419735,(Ceuthostoma_terminale[&index=43]:9.879750,Gymnostoma_nobile[&index=74]:9.879750)[&index=159,posterior=0.999733,age_95%_HPD={4.26314,15.6025}]:8.660635)[&index=160,posterior=0.999733,age_95%_HPD={11.5859,26.2842}]:82.885070)[&index=161,posterior=0.713905,age_95%_HPD={87.6613,112.372}]:17.971683)[&index=162,posterior=0.217171,age_95%_HPD={110.061,126.596}]:6.751273)[&index=163,posterior=0.132249,age_95%_HPD={121.127,129.276}]:2.251552,(((((((Antiquocarya_verruculosa[&index=82,sampled_ancestor=0.003733,age_95%_HPD={71.8047,85.7603}]:13.098542,Manningia_crassa[&index=1,sampled_ancestor=0.002266,age_95%_HPD={72.8872,86.2862}]:12.675179)[&index=164,posterior=0.261032,age_95%_HPD={84.2348,99.3932}]:3.819715,Caryanthus_knoblochii[&index=81,sampled_ancestor=0.000800,age_95%_HPD={83.637,86.2179}]:11.296876)[&index=165,posterior=0.499400,age_95%_HPD={89.8166,103.241}]:3.932622,Calathiocarpus_minimus[&index=83,sampled_ancestor=0.002000,age_95%_HPD={86.6926,91.0981}]:11.308056)[&index=166,posterior=0.832422,age_95%_HPD={93.2432,107.235}]:4.546402,Dahlgrenianthus_suecicus[&index=3,sampled_ancestor=0.000800,age_95%_HPD={71.7575,85.7538}]:25.686704)[&index=167,posterior=0.638182,age_95%_HPD={96.6568,112.043}]:4.009537,Budvaricarpus_serialis[&index=84,sampled_ancestor=0.002533,age_95%_HPD={83.566,88.3103}]:22.578603)[&index=168,posterior=0.849353,age_95%_HPD={100.752,116.888}]:5.627394,Normanthus_miraensis[&index=80,sampled_ancestor=0.002133,age_95%_HPD={66.6037,83.4803}]:38.579809)[&index=169,posterior=0.418078,age_95%_HPD={105.956,122.394}]:5.753774,Endressianthus_miraensis[&index=79,sampled_ancestor=0.001333,age_95%_HPD={66.6307,83.4261}]:44.637402)[&index=170,posterior=0.377016,age_95%_HPD={111.896,127.185}]:8.335609)[&index=171,posterior=1.000000,age_95%_HPD={126.324,129.969}]:0.000000;
+End;

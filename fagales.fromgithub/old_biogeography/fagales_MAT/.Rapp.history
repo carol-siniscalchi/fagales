@@ -1,0 +1,296 @@
+tropical_koeppen
+tropical_koeppen = c(8.5#
+32.67#
+4.17#
+49.79#
+33.05#
+13.81#
+0.34#
+28.57#
+52.76#
+41.8#
+41.62#
+21.23#
+80#
+13.28#
+50.7#
+52.73#
+21.67)
+tropical_koeppen = c(8.5, 32.67, 4.17, 49.79, 33.05, 13.81, 0.34, 28.57, 52.76, 41.8, 41.62, 21.23, 80, 13.28, 50.7, 52.73, 21.67)
+tree_sample = c(28.5, 18.15, 29.27, 26.6, 21.95, 21.92, 30.67, 23.33, 17.37, 16.54, 8.28, 8.25, 8.77, 8.22, 18.34, 9.52, 17.65)
+lm(tropical_koeppen ~ tree_sample)
+summary(lm(tropical_koeppen ~ tree_sample))
+summary(lm(tree_sample ~ tropical_koeppen))
+summary(lm(tropical_koeppen ~ tree_sample))
+disparity = c(3.261818637, 1.791919373, 1.09558321, 0.723204238, 1.289142407, 2.103527584, 1.782224824, 5.363961663, 1.422668733, 1.775602869, 1.372457333, 1.83739785, 1.79314984, 1.990931853, 1.1699604, 7.205395048, 1.169023082)
+summary(lm(tree_sample ~ disparity))
+list = c(155055,155470,155360,155492,155350,155174,155417,155451,155527,155520,155646,155693,156927,156787,157289,154368,159897,159413,159043,160409,157715,157781,151060)
+t.test(151704, list)
+t.test(list, mu=151704)
+t.test(list, mu=151704, oneway.test = TRUE)
+t.test(list, mu=151704, oneway.test)
+t.test(list, mu=151704, alternative = "greater")
+list = c(0.04853825,0.14293,0.06452675,0.13672,0.1419835,0.09441375,0.1477745,0.068763,0.1915,0.0632245,0.128541,0.1014145,0.07521,0.0890805,0.1431935,0.15624,0.1025935,0.0974025,0.057849,0.0262235,0.0914585,0.04635)
+t.test(list, mu=0.033711, alternative = "greater")
+mean(list)
+iris
+iris$Sepal.Length
+iris$Sepal.Width
+plot(Sepal.Length ~ Sepal.Width, data = iris)
+lm(Sepal.Length ~ Sepal.Width, data = iris)
+summary(lm(Sepal.Length ~ Sepal.Width, data = iris))
+abline(lm(Sepal.Length ~ Sepal.Width, data = iris))
+likelihoo(lm(Sepal.Length ~ Sepal.Width, data = iris))
+likelihood(lm(Sepal.Length ~ Sepal.Width, data = iris))
+lik(lm(Sepal.Length ~ Sepal.Width, data = iris))
+mle(Sepal.Length ~ Sepal.Width, data = iris)
+logLik(Sepal.Length ~ Sepal.Width, data = iris)
+logLik(lm(Sepal.Length ~ Sepal.Width, data = iris))
+e^-182.9958
+linear_model = lm(Sepal.Length ~ Sepal.Width, data = iris)
+linear_model
+summary(linear_model)
+logLik(linear_model)
+quadratic_model = lm(Sepal.Length ~ a*Sepal.Width^2 + b*Sepal.Width + c, data = iris)
+quadratic_model = nle(Sepal.Length ~ a*Sepal.Width^2 + b*Sepal.Width + c, data = iris)
+library(nle)
+library(nls)
+install.packages("nls")
+install.packages("nlstools")
+library(nlstools)
+quadratic_model = nls(Sepal.Length ~ a*Sepal.Width^2 + b*Sepal.Width + c, data = iris)
+quadratic_model
+quadratic_model = nls(Sepal.Length ~ a*Sepal.Width^2 + b*Sepal.Width, data = iris)
+quadratic_model
+quadratic_model = nls(Sepal.Length ~ a*Sepal.Width^2 + b*Sepal.Width + c, data = iris)
+quadratic_model = nls(Sepal.Length ~ a*Sepal.Width^2 + b*Sepal.Width, data = iris)
+quadratic_model
+summary(quadratic_model)
+abline(quadratic_model)
+lines(x, predict(quadratic_model), col=2)
+lines(Sepal.Width, predict(quadratic_model), col=2)
+lines(iris$Sepal.Width, predict(quadratic_model), col=2)
+lines(order(iris$Sepal.Width), predict(quadratic_model), col=2)
+plot(Sepal.Length ~ Sepal.Width, data = iris)
+lines(order(iris$Sepal.Width), predict(quadratic_model), col=2)
+lines(order(iris$Sepal.Width), predict(quadratic_model), col=1)
+lines(order(iris$Sepal.Width), predict(quadratic_model), col=3)
+order(iris$Sepal.Width)
+iris[order(Sepal.Width)]
+sort(iris$Sepal.Width)
+lines(sort(iris$Sepal.Width), predict(quadratic_model), col=3)
+lines(iris$Sepal.Width, predict(quadratic_model), col=3)
+lines(iris$Sepal.Width, sortpredict(quadratic_model), col=3)
+lines(iris$Sepal.Width, sort(predict(quadratic_model)), col=3)
+plot(Sepal.Length ~ Sepal.Width, data = iris)
+lines(iris$Sepal.Width, sort(predict(quadratic_model)), col=3)
+lines(sort(iris$Sepal.Width), sort(predict(quadratic_model)), col=3)
+lines(sort(iris$Sepal.Width), predict(quadratic_model), col=3)
+logLik(quadratic_model)
+logLik(linear_model)
+aic(linear_model)
+AIC(linear_model)
+AIC(quadratic_model)
+iris
+iris[Species == "virginica"]
+iris[iris$Species == "virginica"]
+iris[Species == "virginica"]
+subset(iris, Species == "virginica")
+plot(Sepal.Length ~ Sepal.Width, data = subset(iris, Species == "virginica"))
+lm(Sepal.Length ~ Sepal.Width, data = subset(iris, Species == "virginica"))
+linear_model = lm(Sepal.Length ~ Sepal.Width, data = subset(iris, Species == "virginica"))
+summary(linear_model)
+quadratic_model = nls(Sepal.Length ~ a*Sepal.Width^2 + b*Sepal.Width + c, subset(iris, Species == "virginica"))
+quadratic_model = nls(Sepal.Length ~ a*Sepal.Width^2 + b*Sepal.Width, subset(iris, Species == "virginica"))
+summary(quadratic_model)
+AIC(quadratic_model)
+AIC(linear_model)
+quadratic_model = lm(Sepal.Length ~ Sepal.Width ^ 2, data = subset(iris, Species == "virginica"))
+quadratic_model = lm(Sepal.Length ~ a*Sepal.Width ^ 2, data = subset(iris, Species == "virginica"))
+specieslist = c("Abarema glauca")
+library(rgbif)#
+library(ridigbio)
+install.packages("rgbif")
+install.packages("ridigbio")
+i="Abarema glauca"
+item_gbif = occ_search(scientificName = i, return = "data", limit = 500, hasCoordinate = TRUE)#
+item_gbif = data.frame(item_gbif)
+library(rgbif)#
+library(ridigbio)
+item_gbif = occ_search(scientificName = i, return = "data", limit = 500, hasCoordinate = TRUE)#
+item_gbif = data.frame(item_gbif)
+item_gbif
+pvalues = c(0.997476872#
+0.031485797#
+0.984244067#
+0.306749874#
+0.97184154#
+0.982925828#
+0.977238895)
+pvalues = c(0.997476872,0.031485797,0.984244067,0.306749874,0.97184154,0.982925828,0.977238895)
+p.adjust(pvalues, method = "hochberg")
+p.adjust(c(0.017994002,0.944351883,0.801066311,0.929023659,0.005998001,0.498500500,0.811729424,0.241252916,0.000666445,0.439186938,0.111296235,0.525158281,0.771076308,0.218593802,0.501166278,0.161946018,0.780406531), method = "hochberg")
+lambda0 = c(0.507879141,0.230922478,0.089255096,0.291888725,0.696246283,0.627637663,0.298789133,0.027805203,0.474730306,0.430472671,0.497233649,0.181496473,0.679515267,0.281539929,0.922308058,0.056986275)#
+#
+lambda1 = c(0.440975978,0.204581765,0.047664797,0.284265221,0.345009996,0.400815858,0.236636827,0.019544397,0.258193853,0.363944378,0.354352189,0.150315475,0.433850642,0.227969818,0.101407766,0.066265643)
+t.test(lambda0, lambda1)
+lambda0koep = c(0.519811827,0.087497253,0.220783859,0.077619697,0.303290145,0.619725824,0.603203658,0.291924089,0.027805203,0.41052384,0.406627265,0.476617734,0.153173397,0.640655832,0.257632363,0.759917207,0.062820644)#
+#
+lambda1koep = c(0.159362578,0.048828789,0.201521762,0.107327492,0.235265044,0.294612644,0.338455424,0.054423224,0.019544397,0.23120251,0.296276799,0.259398221,0.085421415,0.321786921,0.220206054,0.10546503,0.053737727)
+t.test(lambda0koep, lambda1koep)
+install.packages("scholar")
+get_coauthors("xDNixbkAAAAJ")
+library(scholar)
+get_coauthors("xDNixbkAAAAJ")
+plot_coauthors
+plot_coauthors(get_coauthors("xDNixbkAAAAJ"))
+plot_coauthors(get_coauthors("xDNixbkAAAAJ", n_deep = 3))
+get_num_distinct_journals("xDNixbkAAAAJ")
+predict_h_index("xDNixbkAAAAJ")
+install.packages("bibliometrix")
+library(bibliometrix)
+install.packages('htmlwidgets')
+library(bibliometrix)
+install.packages('vctrs')
+library(bibliometrix)
+install.packages('vctrs')
+options(install.packages.check.source = "yes")
+install.packages('vctrs')
+install.packages('vctrs', type="source")
+library(bibliometrix)
+remotes::update_packages("vctrs")
+update_packages("vctrs")
+citation()
+tree <- read.tree("fagales_combined.hamamelisremoved.mcc.newick.nonegative.collapsesingles.tre")
+library(phytools)
+tree <- read.tree("fagales_combined.hamamelisremoved.mcc.newick.nonegative.collapsesingles.tre")
+tree
+tree <- read.tree("fagales_combined.hamamelisremoved.mcc.newick.nonegative.collapsesingles.tre")
+tree
+trait = read.csv("fagales_MAT_fossil.txt", sep = "\t", row.names=1, header = FALSE)
+trait
+trait.vector = trait$V2#
+names(trait.vector) <- row.names(trait)
+is.ultrametric(tree)#
+tree = force.ultrametric(tree)
+fitBM = fitContinuous(tree, trait.vector)#
+fitOU = fitContinuous(tree, trait.vector, model = "OU") # Make sure it is truly ultrametric even considering small rounding errors -- even a small discrepancy will cause complaints and longer runtime due to VCF optimization.#
+fitEB = fitContinuous(tree, trait.vector, model = "EB")
+library(geiger)
+# MODEL COMPARISON#
+fitBM = fitContinuous(tree, trait.vector)#
+fitOU = fitContinuous(tree, trait.vector, model = "OU") # Make sure it is truly ultrametric even considering small rounding errors -- even a small discrepancy will cause complaints and longer runtime due to VCF optimization.#
+fitEB = fitContinuous(tree, trait.vector, model = "EB")
+trait.vector <- trait.vector[!is.na(trait.vector)]
+fitBM = fitContinuous(tree, trait.vector)#
+fitOU = fitContinuous(tree, trait.vector, model = "OU") # Make sure it is truly ultrametric even considering small rounding errors -- even a small discrepancy will cause complaints and longer runtime due to VCF optimization.#
+fitEB = fitContinuous(tree, trait.vector, model = "EB")
+tree.reduced <- treedata(tree, trait.vector)
+tree.reduced <- treedata(tree, trait.vector)$phy
+# MODEL COMPARISON#
+fitBM = fitContinuous(tree, trait.vector)#
+fitOU = fitContinuous(tree, trait.vector, model = "OU") # Make sure it is truly ultrametric even considering small rounding errors -- even a small discrepancy will cause complaints and longer runtime due to VCF optimization.#
+fitEB = fitContinuous(tree, trait.vector, model = "EB")
+fitBM = fitContinuous(tree.reduced, trait.vector)#
+fitOU = fitContinuous(tree.reduced, trait.vector, model = "OU") # Make sure it is truly ultrametric even considering small rounding errors -- even a small discrepancy will cause complaints and longer runtime due to VCF optimization.#
+fitEB = fitContinuous(tree.reduced, trait.vector, model = "EB")
+fitBM
+fitOU
+fitEB
+fitBM$opt$aicc#
+fitOU$opt$aicc#
+fitEB$opt$aicc
+fastAnc(tree.reduced, trait.vector, model = "OU")
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)
+plot(figure, type = "fan", legend=0.7*max(nodeHeights(tree)), ftype = "off", fsize = c(0.05,0.5), lwd=c(0.7,1), outline = FALSE, setMap(figure,invert=TRUE))
+plot(figure, type = "fan", legend=0.7*max(nodeHeights(tree)), ftype = "off", lwd=c(0.7,1), outline = FALSE, setMap(figure,invert=TRUE))
+plot(figure, outline = FALSE, setMap(figure,invert=TRUE))
+x <- fastBM(tree.reduced, trait.vector, model = "OU", alpha = alpha, sig2 = 0.2)
+x <- fastBM(tree.reduced, trait.vector, model = "OU")
+phenogram(tree.reduced, trait.vector, ftype="off",spread.labels=FALSE)
+phenogram(tree.reduced, trait.vector, ftype="off",spread.labels=FALSE)#
+title("Fagales MAT through time")
+tree <- read.tree("fagales_combined.hamamelisremoved.mcc.newick.nonegative.collapsesingles.tre")
+tree.reduced <- treedata(tree, trait.vector)$phy
+phenogram(tree.reduced, trait.vector, ftype="off",spread.labels=FALSE)#
+title("Fagales MAT through time")
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure,invert=TRUE))
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure,invert=TRUE), fsize = c(0.5,1), lwd=c(0.7,1),)
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure,invert=TRUE), fsize = c(0.5,1), lwd=c(0.7,1))
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure,invert=TRUE), fsize = c(0.5,1), lwd=c(1,10))
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure,invert=TRUE), fsize = c(1,1), lwd=c(1,10))
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure,invert=TRUE), fsize = c(0.5,2), lwd=c(1,10))
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure,invert=TRUE), fsize = c(0.5,5), lwd=c(1,10))
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure,invert=TRUE), fsize = c(0.5,1), lwd=c(1,10))
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure,invert=FALSE), fsize = c(0.5,1), lwd=c(1,10))
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure,invert=FALSE, fsize = c(0.5,1), lwd=c(1,10))
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure, invert=TRUE, fsize = c(0.5,1), lwd=c(1,10))
+)
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure, invert=TRUE, fsize = c(0.5,1), lwd=c(1,1)))
+figure = contMap(tree.reduced, trait.vector, plot = FALSE)#
+plot(figure, outline = FALSE, setMap(figure), invert=TRUE, fsize = c(0.5,1), lwd=c(1,1)))
+plot(figure, outline = FALSE, setMap(figure,invert=TRUE), fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, setMap(figure,invert=FALSE), fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, setMap(figure), fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, setMap(figure,invert=FALSE), fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, setMap(figure), fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, setMap(figure, col = c("blue", "red")), fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, setMap(figure, col = c("blue", "red")), fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, setMap(figure, col = c("blue", "red")), fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, setMap(figure, colors = c("blue", "red")), fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, setMap(figure, colors = c("blue", "red")), fsize = c(0.5,1), lwd=c(1,10))
+figure <- setMap(figure,colors=c("blue","purple","red"))
+plot(figure, outline = FALSE, fsize = c(0.5,1), lwd=c(1,10))
+plot(figure, outline = FALSE, fsize = c(0.5,1), lwd=c(1,10), cex = 10)
+plot(figure, outline = FALSE, fsize = c(0.5,1), lwd=c(1,10), edge.width = 10)
+plot(figure, outline = FALSE, fsize = c(0.5,1), lwd=c(1,10), edge.width = 2)
+plot(figure, outline = FALSE, fsize = c(0.5,1), lwd=c(2,10), edge.width = 2)
+plot(figure, outline = FALSE, fsize = c(0.5,1), lwd=c(3,10), edge.width = 2)
+plot(figure, outline = FALSE, fsize = c(1,1), lwd=c(3,10), edge.width = 2)
+plot(figure, outline = FALSE, fsize = c(.6,1), lwd=c(3,10), edge.width = 2)
+plot(figure, outline = FALSE, fsize = c(.5,1), lwd=c(3,10), edge.width = 2)
+figure <- setMap(figure,colors=c("cornflowerblue","purple","red"))
+plot(figure, outline = FALSE, fsize = c(.5,1), lwd=c(3,10), edge.width = 2)
+figure <- setMap(figure,colors=c("deepskyblue","purple","red"))
+plot(figure, outline = FALSE, fsize = c(.5,1), lwd=c(3,10), edge.width = 2)
+figure <- setMap(figure,colors=c("deepskyblue","darkorchid1","red"))
+plot(figure, outline = FALSE, fsize = c(.5,1), lwd=c(3,10), edge.width = 2)
+figure
+figure$cols
+figure$lims
+fitOU
+fitOU$z0
+fitOU$res
+fitOU$bnd
+fitOU$opt
+fitOU$opt$z0
+tree <- read.tree("fagales_combined.hamamelisremoved.mcc.newick.nonegative.collapsesingles.extantonly.tre")
+trait = read.csv("fagales_MAT_fossil.txt", sep = "\t", row.names=1, header = FALSE)#
+trait.vector = trait$V2#
+names(trait.vector) <- row.names(trait)#
+trait.vector <- trait.vector[!is.na(trait.vector)]#
+#
+tree.reduced <- treedata(tree, trait.vector)$phy#
+# MODEL COMPARISON#
+fitBM = fitContinuous(tree.reduced, trait.vector)#
+fitOU = fitContinuous(tree.reduced, trait.vector, model = "OU") # Make sure it is truly ultrametric even considering small rounding errors -- even a small discrepancy will cause complaints and longer runtime due to VCF optimization.#
+fitEB = fitContinuous(tree.reduced, trait.vector, model = "EB")
+# AIC#
+fitBM$opt$aicc#
+fitOU$opt$aicc#
+fitEB$opt$aicc
+fitOU$opt$z0
