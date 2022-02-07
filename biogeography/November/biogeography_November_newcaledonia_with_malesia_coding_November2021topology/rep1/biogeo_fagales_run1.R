@@ -55,7 +55,7 @@ check_BioGeoBEARS_run(BioGeoBEARS_run_object)
 
 # For a slow analysis, run once, then set runslow=FALSE to just 
 # load the saved result.
-runslow = TRUE
+runslow = FALSE
 resfn = "fagales_DEC.Rdata"
 if (runslow) {
   res = bears_optim_run(BioGeoBEARS_run_object)
