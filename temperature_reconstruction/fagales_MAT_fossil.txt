@@ -1,0 +1,84 @@
+Alfaroa_manningii	21.0804
+Alfaropsis_roxburghiana	18.7521
+Allocasuarina_verticillata	14.8989
+Alnus_incana	5.18624
+Alnus_clarnoensis	14
+Antiquacupula_sulcata	
+Antiquocarya_verruculosa	
+Archaefagacea_futabensis	
+Asterocarpinus_perplexans	11.3
+Beardia_vancouverensis	3.5
+Betula_leopoldae	3.5
+Betula_pendula	6.5812
+Budvaricarpus_serialis	
+Calathiocarpus_minimus	
+Canacomyrica_monticola	18.5206
+Carpinus_betulus	8.65535
+Carya_ovata	10.0254
+Caryanthus_knoblochii	
+Cascadiacarpa_spinosa	3.5
+Casholdia_microptera	
+Castanea_seguinii	17.0622
+Castanopsis_tibetana	17.7214
+Castanopsoidea_columbiana	
+Casuarina_equisetifolia	24.2359
+Ceuthostoma_terminale	17.3857
+Chrysolepis_sempervirens	6.29411
+Colombobalanus_excelsa	17.1481
+Comptonia_peregrina	6.94444
+Contracuparius_huntsvillensis	
+Corylus_avellana	7.09862
+Cranea_wyomingensis	17.9
+Cruciptera_simpsonii	14
+Cyclocarya_paliurus	16.7782
+Dahlgrenianthus_suecicus	
+Endressianthus_miraensis	
+Engelhardia_spicata	
+Fagopsis_longifolia	11.3
+Fagus_sylvatica	7.86305
+Ferrignocarpus_bivalvis	14.73
+Formanodendron_doichangensis	
+Gymnostoma_nobile	24.8818
+Hooleya_lata	14
+Juglans_mandshurica	9.45147
+Lithocarpus_henryi	15.585
+Manningia_crassa	
+Morella_cerifera	18.8985
+Myrica_gale	5.40265
+Normanthus_miraensis	
+Nothofagus_aequilateralis	20.0296
+Nothofagus_alessandrii	10.83
+Nothofagus_alpina	8.5902
+Nothofagus_antarctica	6.95267
+Nothofagus_balansae	19.4115
+Nothofagus_baumanniae	15.7333
+Nothofagus_betuloides	5.87206
+Nothofagus_codonandra	18.9906
+Nothofagus_crenata	17.4889
+Nothofagus_cunninghamii	9.67186
+Nothofagus_dombeyi	8.76047
+Nothofagus_fusca	9.91588
+Nothofagus_glauca	11.63
+Nothofagus_nitida	8.98421
+Nothofagus_obliqua	9.78023
+Nothofagus_perryi	15.2462
+Nothofagus_pumilio	5.87239
+Notholithocarpus_densiflorus	12.4277
+Oreomunnea_mexicana	18.4118
+Ostrya_carpinifolia	11.4409
+Ostryopsis_davidiana	8.24648
+Palaeocarpinus_dakotensis	
+Palaeocarya_clarnensis	
+Paleooreomunnea_stoneana	
+Paleoplatycarya_wingii	
+Platycarya_strobilacea	15.1325
+Polyptera_manningii	
+Protofagacea_allonensis	
+Pseudofagus_idahoensis	
+Pterocarya_stenoptera	16.4262
+Quercus_rubra	9.34473
+Rhoiptelea_chiliantha	16.46
+Soepadmoa_cupulata	
+Ticodendron_incognitum	19.7795
+Trigonobalanoidea_americana	
+Trigonobalanus_verticillata	20.1231
