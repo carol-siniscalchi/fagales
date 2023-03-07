@@ -37,11 +37,11 @@ source("mcmc_CEFBDP.Rev")
 
 This directory contains files related to the episodic birth-death analyses. 
 
-    * fagales.mcc.tre - tree used in the analyses
-    * mcmc_EBD.Rev - base script used to run the RevBayes analyses (set up for 20 time bins)
-    * plot_EBD.R - base script used to plot the results using the RevGadgets R package.
-    * EBD_10bins.pdf and EBD_10bins_ext.pdf - full and extant only results with 10 time bins
-    * EBD_20bins.pdf and EBD_20bins_ext.pdf - full and extant only results with 20 time bins
+* fagales.mcc.tre - tree used in the analyses
+* mcmc_EBD.Rev - base script used to run the RevBayes analyses (set up for 20 time bins)
+* plot_EBD.R - base script used to plot the results using the RevGadgets R package.
+* EBD_10bins.pdf and EBD_10bins_ext.pdf - full and extant only results with 10 time bins
+* EBD_20bins.pdf and EBD_20bins_ext.pdf - full and extant only results with 20 time bins
 
 ### biogeography
 
@@ -63,4 +63,4 @@ This directory contains files and scripts used to run BioGeoBears analyses.
   
   * **map_bio_regions** - map containing the regions used for coding
   
-  ###
+  ### temperature_reconstructions
