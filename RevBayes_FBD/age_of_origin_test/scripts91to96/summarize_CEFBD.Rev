@@ -1,0 +1,5 @@
+# Read in the tree trace and construct the maximum clade credibility (MCC) tree #
+trace = readTreeTrace("fagales_combined_91to06.trees")
+
+# Summarize tree trace and save MCC tree to file
+mccTree(trace, file="fagales_combined_91to06.mcc.tre" )
