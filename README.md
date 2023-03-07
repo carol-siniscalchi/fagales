@@ -63,4 +63,11 @@ This directory contains files and scripts used to run BioGeoBears analyses.
   
   * **map_bio_regions** - map containing the regions used for coding
   
-  ### temperature_reconstructions
+  ### temperature_reconstruction
+  
+  Files and scripts to perform the reconstruction.
+  
+  * fagales_MAT_fossil.txt - mean temperatures
+  * fagales_temp_recon.R - script that performs the reconstruction
+  * fagales.newoct22.mcc.simplified.noancestors.tre - tree used in the reconstruction
+  * fagales.ancestral.temperature.newNov22.pdf - result
