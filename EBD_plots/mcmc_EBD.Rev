@@ -23,7 +23,7 @@ taxa <- T.taxa()
 moves    = VectorMoves()
 monitors = VectorMonitors()
 
-NUM_INTERVALS = 11
+NUM_INTERVALS = 21
 NUM_BREAKS := NUM_INTERVALS - 1
 
 
