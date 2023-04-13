@@ -1,0 +1,5 @@
+# Read in the tree trace and construct the maximum clade credibility (MCC) tree #
+trace = readTreeTrace("fagales_newquercus_morphoonly.trees")
+
+# Summarize tree trace and save MCC tree to file
+mccTree(trace, file="fagales_newquercus_morphoonly.mcc.tre" )

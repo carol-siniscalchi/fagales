@@ -1,0 +1,61 @@
+################################################################################
+#
+# RevBayes Example: Total-evidence dating under the fossilized birth-death model
+# 
+# This file: Runs the full MCMC ...
+#
+# authors: Tracy A. Heath, Walker C. Pett, April M. Wright
+#
+################################################################################
+
+#######################
+# Reading in the Data #
+#######################
+# Create the full list of taxa (including all fossils and extant species #
+taxa <- readTaxonData("fagales_age_range.tsv")
+
+# Import the morphological character matrix #
+# this file contains only the taxa for which morphological characters are available #
+morpho <- readDiscreteCharacterData("fagales_morpho_new.nex")
+
+## helpers
+n_taxa <- taxa.size()
+
+moves = VectorMoves()
+
+# Load the model files
+
+source("model_FBDP.Rev") # FBD tree prior
+
+source("model_Morph.Rev") # Morphological character change model
+
+
+########
+# MCMC #
+########
+
+# initialize the model object #
+mymodel = model(alpha_morpho)
+
+monitors = VectorMonitors()
+
+# Create a vector of monitors #
+# 1. for the full model #
+monitors.append( mnModel(filename="fagales_newquercus_morphoonly.log", printgen=10) )
+
+# 2. the tree #
+monitors.append( mnFile(filename="fagales_newquercus_morphoonly.trees", printgen=50, fbd_tree) )
+
+# 3. and a few select parameters to be printed to the screen #
+monitors.append( mnScreen(printgen=10, num_samp_anc, origin_time, age_Soepadmoa_cupulata) )
+
+# Initialize the MCMC object #
+mymcmc = mcmc(mymodel, monitors, moves)
+
+# Run the MCMC #
+mymcmc.burnin(generations=5000,tuningInterval=100)
+mymcmc.run(generations=500000)
+
+
+# Quit RevBayes #
+q()
