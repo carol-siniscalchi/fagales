@@ -3,9 +3,6 @@ library(geiger)
 
 tree <- read.tree("fagales.newoct22.mcc.simplified.noancestors.tre")
 
-is.ultrametric(tree) 
-tree <- force.ultrametric(tree, method="extend")
-
 trait = read.csv("fagales_MAT_fossil.txt", sep = "\t", row.names=1, header = FALSE)
 trait.vector = trait$V2
 names(trait.vector) <- row.names(trait)
