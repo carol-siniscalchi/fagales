@@ -7,7 +7,7 @@ Scripts, data files and figures from the manuscript "Fagalean phylogeny in a nut
 
 ### RevBayes_FBD
 
-This directory contains all the scripts and data used to run all FDB analyses (full, containing all terminals, with age of origin set between 94.0 and 125.0 my and the tests with a reduced dataset and two different age of origin range). 
+This directory contains all the scripts and data used to run all FDB analyses (full, containing all terminals, with age of origin set between 94.0 and 125.0 my; tests with a reduced dataset and two different age of origin range; test with the morphological dataset only). 
 The script "mcmc_CEFBDP.Rev" calls the other scripts and run the analysis. Within RevBayes, use the command below to execute:
 ```
 source("mcmc_CEFBDP.Rev")
@@ -32,6 +32,16 @@ source("mcmc_CEFBDP.Rev")
     * fagales_morpho_trimmed.nex - morphological matrix
     * fagales_age_range_trimmed.tsv - minimum and maximum age for all taxa in the analysis
   * scripts folders - contain the same files defined above
+  
+  * **morphology_only** - defines the analyses testing the FDB model with only the morphological dataset
+  * data - same files as the full analysis
+    * fagales_morpho_new.nex - morphological matrix
+    * fagales_age_range.tsv - minimum and maximum age for all taxa in the analysis
+  * scripts folders - contain the scripts needed to run the analysis, modified to exclude the molecular dataset
+    * mcmc_CEFBDP.Rev - run the full analysis
+    * model_FBDP.Rev - sets up the FBD model
+    * model_Morph.Rev - sets up the morphological model
+    * summarize_CEFBD.Rev - summarizes all sampled trees and create MCC tree
 
 ### RevBayes_EBD
 
