@@ -33,7 +33,7 @@ source("mcmc_CEFBDP.Rev")
     * fagales_age_range_trimmed.tsv - minimum and maximum age for all taxa in the analysis
   * scripts folders - contain the same files defined above
   
-  * **morphology_only** - defines the analyses testing the FDB model with only the morphological dataset
+* **morphology_only** - defines the analyses testing the FDB model with only the morphological dataset
   * data - same files as the full analysis
     * fagales_morpho_new.nex - morphological matrix
     * fagales_age_range.tsv - minimum and maximum age for all taxa in the analysis
